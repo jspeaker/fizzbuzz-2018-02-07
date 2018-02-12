@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace fizzbuzz_2018_02_07
 {
-  [TestFixture]
+    [TestFixture]
   public class FizzBuzzTests
   {
     [Test, Category("Unit")]
@@ -13,7 +13,7 @@ namespace fizzbuzz_2018_02_07
       IInteger integer = new Integer(2);
 
       // act
-      string two = integer.ToString();
+      string two = $"{integer}";
 
       // assert
       two.Should().Be("2");
@@ -26,7 +26,7 @@ namespace fizzbuzz_2018_02_07
       IInteger integer = new Integer(6);
 
       // act
-      string fizz = integer.ToString();
+      string fizz = $"{integer}";
 
       // assert
       fizz.Should().Be("fizz");
@@ -39,7 +39,7 @@ namespace fizzbuzz_2018_02_07
       IInteger integer = new Integer(10);
 
       // act
-      string buzz = integer.ToString();
+      string buzz = $"{integer}";
 
       // assert
       buzz.Should().Be("buzz");
@@ -52,7 +52,7 @@ namespace fizzbuzz_2018_02_07
       IInteger integer = new Integer(30);
 
       // act
-      string fizzbuzz = integer.ToString();
+      string fizzbuzz = $"{integer}";
 
       // assert
       fizzbuzz.Should().Be("fizzbuzz");
